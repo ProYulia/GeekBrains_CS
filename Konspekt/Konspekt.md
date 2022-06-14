@@ -254,3 +254,52 @@ __Для того, чтобы вывести на экран все элемен
 `res = decimal.Round(1.1M);       // res = 1`
 
 `res = decimal.Round(1.8M);       // res = 2`
+### Заполнение массива псевдослучайными числами
+1. Создаем массив и задаем его размер `int [] array = new int (10);` По умолчанию такой массив заполнен нулями
+2. Создаем метод для заполнения массива, в котором в качестве аргумента указываем массив `void FillArray(int [] collection;`
+3. Далее получаем длину массива `int length = collection.Length;`
+4. Задаем позицию индекс `int index = 0;`
+5. Пишем тело метода. Для этого создаем цикл `while (index < length)`
+6. В теле цикла пишем, что в массив с индексом первого элемента равным index заполняется случайными числами в диапазоне от 1 до 10 `collection [index] = new.Random().Next(1, 10);`
+7. Увеличиваем индекс на единицу `index++;`
+
+`int [] array = new int (10);`
+
+`void FillArray(int [] collection;`
+
+`{`
+
+`int length = collection.Length;`
+
+`int index = 0;`
+
+`while (index < length)`
+
+    `{ collection [index] = new.Random().Next(1, 10);`
+    
+    `index++; }`
+    
+    `}`
+8. Создаем метод, который будет печатать массив `void Print(int[] mass)`
+9. Задаем переменную для длины массива `int count = mass.Length;`
+10. Создаем переменную для индекса `int position = 0;`
+11. Создаем новый цикл для выведения значений на экран `while (position < count) {Console.WriteLine(mass[position]);`
+12. Увеличиваем переменную position на 1 `position ++;`
+
+`void Print(int[] mass)`
+
+`{`
+
+   `int count = mass.Length;`
+   
+   `int position = 0;`
+   
+   `while (position < count)`
+   
+   `{`Console.WriteLine(mass[position]);`
+   
+      `position++};`
+13. Вызываем обе функции `FillArray(array); PrintArray(array);`
+      
+   
+      
