@@ -24,7 +24,7 @@ Console.WriteLine($"Total amount of positive numbers is: {count}");
 //Задача 45: Напишите программу, которая будет создавать копию 
 //заданного массива с помощью поэлементного копирования.
 
-/*
+
 Console.Write("Original array: ");
 int[] myArray = RandomArray(10);
 Console.Write("Clone array:    ");
@@ -51,4 +51,3 @@ void ArrayClone(int[] array)
         Console.Write(clone[i] + " ");
     }
 }
-*/
