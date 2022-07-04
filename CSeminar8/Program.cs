@@ -1,25 +1,4 @@
-﻿
-// // Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива
 
-// int[,] newarray = new int[4,4];
-// CreateRandomArray2d(newarray, 1, 10);
-// PrintArray2D(newarray);
-// Console.WriteLine();
-
-// ChangeLines(newarray);
-// PrintArray2D(newarray);
-
-// int[,] ChangeLines (int [,] massive)
-// {
-// 	int temp;
-//  	for (int j = 0; j < massive.GetLength(1); j++)
-//     {
-// 		temp = massive[0, j];
-// 		massive[0, j] = massive[massive.GetLength(0)-1, j];
-// 		massive[massive.GetLength(0)-1, j] = temp;
-// 	}
-//     return massive;
-// }
  
 int[,] CreateRandomArray2d (int [,] massive, int min, int max) // заполняет двумерный массив случайными целыми числами
 {
@@ -40,64 +19,8 @@ void PrintArray2D(int [,] massive) // выводит массив на экра�
     }
 }
 
-
-	
-// Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. 
-// В случае, если это невозможно, программа должна вывести сообщение для пользователя.
-
-// int [,] myarray = new int [4,4];
-// CreateRandomArray2d(myarray, 1, 10);
-// PrintArray2D(myarray);
-// Console.WriteLine();
-// ChangeRowsColumns(myarray);
-// PrintArray2D(myarray);
-
-// int[,] ChangeRowsColumns(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = i+1; j < array.GetLength(1); j++)
-//         {
-//             int temp = array[i,j];
-//             array[i,j] = array[j,i];
-//             array[j,i] = temp;
-//         }
-//     }
-//     return array;
-// } 
-
-
-// // Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен 
-// // наименьший элемент.
-
-// int[,] DeleteRowColumn(int[,] massive)
-// {
-//     int minRow = 0;
-//     int minColumn = 0;
-//     int min = massive[minRow,minColumn];
-//     for (int i = 0; i < massive.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < massive.GetLength(1); j++)
-//         {
-//            if(massive[i,j] < min) 
-//            {
-//         	 min = massive[i,j];
-//           	 minRow = i;
-//           	 minColumn = j;
-//            }
-//         }
-//     }
-//     for (int i = 0; i < massive.GetLength(0); i++)
-//            massive[i, minColumn] = 0;
-
-//     for (int j = 0; j < massive.GetLength(1); j++)
-//            massive[minRow, j] = 0;
-
-//     return massive;
-// }	
-// -----------------------------------------------------------------------------------------------------
-Задача 54: Задайте двумерный массив. 
-Напишите программу, которая упорядочит по возрастанию элементы каждой строки двумерного массива.
+// Задача 54: Задайте двумерный массив. 
+// Напишите программу, которая упорядочит по возрастанию элементы каждой строки двумерного массива.
 
 int[,] myArray = new int[6,6];
 CreateRandomArray2d(myArray,1,10);
@@ -155,7 +78,8 @@ void MinSumStr (int [,] array, int maxElement)
 	Console.WriteLine($"Минимальная сумма элементов находится в {minSumLine} строке и равна {minSum}");
 }
 
-Задача 62. Заполните спирально массив 4 на 4.
+// Задача 62. Заполните спирально массив 4 на 4.
+
 int n = 4;
 int [,] myArray = new int [n,n];
 SnailFill(myArray);
